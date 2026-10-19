@@ -1,5 +1,7 @@
 # Business Admin Dashboard
 
+[Live demo](https://business-admin-dashboard.pages.dev/) · [GitHub repository](https://github.com/zakihasan25/business-admin-dashboard)
+
 An independently designed, interactive portfolio demonstration of a business operations workspace. **Northstar Operations and every record are fictional. This is not client work.** No production backend, database, real authentication, or external API is connected. Entry and access controls are browser-side simulations.
 
 ## Features

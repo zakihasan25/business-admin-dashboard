@@ -54,3 +54,9 @@ Resolver 6 initially had an incompatible optional peer dependency tree; version 
 `npm audit` reported five high-severity development-tool findings in the chain `eslint-config-next → @next/eslint-plugin-next → fast-glob → micromatch → braces`. The underlying advisory is [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). The currently published braces release is 3.0.3 and the advisory includes that release. The audit suggestion downgrades the Next lint configuration to an older major version; it was not applied because that would compromise compatibility. These packages support local linting and are not part of the deployed static website. Recheck advisories and update when a compatible patch is released. A separate preview-server compression advisory was removed by replacing that dependency with the small local static server.
 
 Automated accessibility coverage is limited to semantic controls, keyboard interactions, focus, and responsive layout checks. No claim of a formal WCAG audit, all-browser coverage, or production security review is made. No deployment, GitHub push, or external account modification was performed.
+
+## Production deployment smoke check — October 19, 2026
+
+Cloudflare Pages successfully built and published merged main commit `eb9eb1e4a5cd6242217f1c3f36413482393b552e` at https://business-admin-dashboard.pages.dev/. Production uses the static-export preset, `npm run build`, output `out`, and `NODE_VERSION=22`.
+
+Live-browser checks confirmed the public entry screen, Enter Demo, dashboard fixture totals, lazy-loaded delivery planner, and the Load example tradeoff (portal capacity 60h; onboarding 54h → 30h). No plan was applied during this smoke check. The full automated suite results above are local verification; they were not rerun against the production URL.

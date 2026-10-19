@@ -14,7 +14,6 @@ This is a fictional frontend demonstration, not client work or a production pred
 
 Repository: https://github.com/zakihasan25/business-admin-dashboard
 
-Live demo: [Add the verified Cloudflare Pages URL after deployment.]
+Live demo: https://business-admin-dashboard.pages.dev/
 
 #FrontendDevelopment #TypeScript #ProductEngineering #SaaS #Portfolio
-
